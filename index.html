@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>The PsycoBot - Intelligent Career Guiding ChatBot</title>
+        <meta name="description" content="An Intelligent and Analytical Career Counselling Chatbot that can give guidance relating to any specific career and even share knowledge keeping track of phase your career is in.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="icon.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
+        <link rel="stylesheet" href="fonts/fontawesome-webfont.ttf">
+        <link rel="stylesheet" href="fonts/fontawesome-webfont.svg">
+        <link rel="manifest" href="site.webmanifest">
+
+        <!-- smoosh -->
+        <!-- build:css css/main.css -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <!-- endbuild -->
+        <!-- endsmoosh -->
+
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="site-header clearfix" role="banner">
+                <div class="site-logo">
+                   Psyco Bot
+                </div>
+                <ul class="site-nav inline-block-list">
+                   <li><a href="#features"
+                           data-ga-category="Outbound links"
+                           data-ga-action="Nav click"
+                           data-ga-label="Source code">Features</a></li>
+                   <li><a href="#feedback-form"
+                           data-ga-category="Outbound links"
+                           data-ga-action="Nav click"
+                           data-ga-label="Docs">Feedbacks</a></li>
+                   <li><a href="#footer-section"
+                           data-ga-category="Outbound links"
+                           data-ga-action="Nav click"
+                           data-ga-label="Other projects">Join Us</a></li>
+                </ul>
+            </div>
+            <label class="imp-note">We are in development phase right now. support us sharing your valuable suggestions on the idea and help us revolutionize the way of career guidance</label>
+            <div class="site-section" id="features">
+                <div class="container">
+                    <h3>World's First Intelligent and Analytical Career Guiding ChatBot</h3>
+
+                    <div class="grid">
+                        <div class="grid-cell">
+                            <h3>Chat 24*7 Seeking Career Guidance</h3>
+                            <p>Chat with this social chatbot 24*7 and seek solutions to all your career related problems. Also, discuss your interests and resolve any confusions what so ever related to the career you should choose. A more of a friend cum psychological chatbot which likes giving advice and even remembers to poke you if it gets anything relevant for your career making you feel as a friend in your phone.</p>
+                        </div>
+
+                        <div class="grid-cell">
+
+                        </div>
+
+                        <div class="grid-cell">
+
+                        </div>
+
+                        <div class="grid-cell">
+                            <h3>SMS Friendly Conversation</h3>
+                            <p>As Many of us have habit of talking in sms language as we feel a lot more convinient talking to each other in that language on facebook, whatsapp or other social sites. Similarly, you can talk to this small psycologist in sms friendly language and he will understand and reply in same way.</p>
+                        </div>
+                        <div class="grid-cell">
+                            <h3>Get Interest Analysis and Career Track</h3>
+                            <p>As this chatbot talks with you regularly, it starts constructing an image of you in his memory, therefore making a <b>predictive analysis</b> of percentage of your interest in different fields <b>based on chat</b>. Once this prediction phase starts, you will also be provided with list of career options you have from the current stage of which you can choose where to head up to.</p>
+                        </div>
+
+                        <div class="grid-cell">
+
+                        </div>
+                        <div class="grid-cell">
+
+                        </div>
+
+                        <div class="grid-cell">
+                            <h3>Get Updates On Your Interest From Around The World</h3>
+                            <p>As the bot reaches the prediction phase and has you choosing your priority career track from list of options, it begins the knowldge sharing phase in which it provides you alerts regarding any and all of the information related to your field be it auditions of dance competitions, or entrance exams dates for engineering etc..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="site-section" id="feedback-form">
+                <div class="container">
+                    <h3>Feedback Form</h3>
+
+                    <form class="feedback-form" id="form1">
+                        <div>
+                            <p>Name</p>
+                            <input type="text" id="name" name="person_name" value="" pattern="^[a-zA-Z0-9 ]+$" title="Name Must Not Include Special Characters" >
+                        </div>
+                        <div>
+                            <p>Linkedin Profile Url</p>
+                            <input type="text" class="removeand" id="linkedin-url" name="linkedin_url" value="" pattern="^[a-zA-Z0-9:/-]+$" title="Just A Valid Linkedin Profile URL, NA if you don't wish to">
+                        </div>
+                        <div>
+                            <p>Email Address</p>
+                            <input type="text" class="removeand" id="person_email" name="person_email" value="" pattern="^[a-zA-Z0-9@.]+$" title="Valid Email Address">
+                        </div>
+                        <div>
+                            <p>Comments</p>
+                        </div>
+                        <div class="review-text">
+                            <textarea title="Review Content" id="textarea" name="comments" class="removeand" rows=10" cols="80" placeholder="Comment... "  pattern="^[a-zA-Z0-9]+$" title="Must Not Include Special Characters"></textarea>
+                        </div>
+                        <div class="rating-star">
+                            <p> Rate Us:</p>
+                            <p>
+                             <i class="fa fa-star-o review-stars" id="star1" data-value="1"></i>
+                             <i class="fa fa-star-o review-stars" id="star2" data-value="2"></i>
+                             <i class="fa fa-star-o review-stars" id="star3"  data-value="3"></i>
+                             <i class="fa fa-star-o review-stars" id="star4" data-value="4"></i>
+                             <i class="fa fa-star-o review-stars" id="star5" data-value="5"></i>
+                            </p>
+                            <input type="hidden" value="" id="rating" name="rating"/>
+                        </div>
+                        <div class="submit-button">
+                            <button type="submit" id="submit" name="submit"> Submit Feedback </button>`
+                        </div>
+                    </form>
+                    <p class="thanks-response"> Thank You For Your Feedback</p>
+                    <p class="error-response">Plese Fill In All The Fields</p>
+                </div>
+            </div>
+
+            <!--<div class="site-section" id="reviews">-->
+                <!--<div class="container">-->
+                    <!--<h3>We Are In A Buzz</h3>-->
+
+                    <!--<div class="grid overflow-grid reviews-grid">-->
+
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <div class="site-footer" id="footer-section" role="contentinfo">
+                <p class="imp-note"> Have Skills and want to be a part of our exciting venture. Well we are not that far.</p>
+                <p class="imp-note"> Contact: 9899883072 <br> Mailing Address: psy.startup.ai@gmail.com <br> <br>
+                </p>
+            </div>
+        </div>
+
+        <!-- smoosh -->
+        <!-- build:js js/main.js -->
+        <!--<script src="js/jquery.min.js"></script>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/site.js"></script>
+        <!-- endbuild -->
+        <!-- endsmoosh -->
+
+    </body>
+</html>

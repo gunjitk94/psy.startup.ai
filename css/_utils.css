@@ -1,0 +1,261 @@
+/* ==========================================================================
+   Utilities
+   ========================================================================== */
+
+/*
+ * Grid
+ */
+
+
+.grid {
+    letter-spacing: -0.31em;
+    word-spacing: -0.43em;
+    text-rendering: optimizeSpeed;
+    margin: 51px 17px;
+}
+
+.grid-cell {
+    display: inline-block;
+    letter-spacing: normal;
+    text-align: left;
+    text-rendering: auto;
+    vertical-align: top;
+    width: 50%;
+    word-spacing: normal;
+}
+
+.grid-cell > * {
+    text-align: justify;
+    padding: 0px 15px;
+}
+
+.grid-cell h5{
+    margin: 7px 0 0 0;
+    font-family: monospace;
+}
+
+/*
+ * Inline-block list items
+ */
+
+.inline-block-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.inline-block-list li {
+    display: inline-block;
+    padding: 0;
+    vertical-align: top;
+    width: 28%;
+    height: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: initial;
+    border-image: initial;
+}
+
+.inline-block-list li:hover {
+    background-color: rgba(243, 233, 233, 0.28);
+}
+
+.inline-block-list li:first-child {
+    margin-left: 0;
+}
+
+/*
+ * Flexible multi-media embeds
+ */
+
+.flex-embed {
+    background-color: #000;
+    box-shadow: 0 0 10px #000;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+.flex-embed a, /* required by IE 6/7 */
+.flex-embed iframe,
+.flex-embed img,
+.flex-embed embed,
+.flex-embed object {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.flex-embed .play-btn {
+    background: url("../img/play-btn.svg");
+    height: 150px;
+    left: 50%;
+    margin-left: -75px;
+    margin-top: -75px;
+    position: absolute;
+    top: 50%;
+    transition: 1s;
+    width: 150px;
+}
+
+.flex-embed:hover .play-btn {
+    opacity: 0.5;
+}
+
+.feedback-form{
+    padding-top: 17px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 28px;
+    text-align: left;
+}
+
+.feedback-form div{
+
+    padding-left: 22px;
+    font-size: larger;
+    font-style: normal;
+    font-family: monospace;
+    color: rgba(128, 8, 237, 0.44);
+    width: 90%;
+    height: auto;
+    text-align: center;
+    display: inline-flex;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.feedback-form div p{
+    text-align: center;
+    padding-top: 5px;
+}
+
+.feedback-form div input{
+    width: 45%;
+    height: 38px;
+    border: 2px solid rgba(124, 118, 118, 0.38);
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+    word-spacing: .5em;
+    word-wrap: break-word;
+    text-indent: 3%;
+    color: rgba(24, 29, 176, 0.67) !important;
+}
+
+.feedback-form div textarea{
+    width: 45%;
+    border: 2px solid rgba(124, 118, 118, 0.38);
+    color: rgba(24, 29, 176, 0.67) !important;
+}
+
+.review-text{
+    margin-top: 0 !important;
+    width: 90% !important;
+}
+.review-text textarea{
+    width: 100% !important;
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+    word-spacing: .5em;
+    word-wrap: break-word;
+    text-indent: 3%;
+    line-height: 28px;
+}
+
+.submit-button{
+    justify-content: center !important;
+}
+
+.submit-button button{
+    background-color: rgba(0, 0, 255, 0.4);
+    width: 221px;
+    height: 58px;
+    border: 0;
+    cursor: pointer;
+    font-family: monospace;
+    color: #444444;
+}
+
+.rating-star p i:hover{
+    cursor: pointer;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.rating{
+    float: right;
+    margin-top: -49px;
+}
+
+.separator{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    margin: 30px 0 30px 0;
+}
+
+.overflow-grid{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 700px !important;
+}
+
+.imp-note{
+    color: yellow;
+}
+
+.thanks-response{
+    color: green;
+}
+
+.error-response{
+    color: red;
+}
+
+#loadinggif.show
+{
+    left : 50%;
+    top : 50%;
+    position : absolute;
+    z-index : 101;
+    width : 32px;
+    height : 32px;
+    margin-left : -16px;
+    margin-top : -16px;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers:
+ *
+ *  1. The space content is one way to avoid an Opera bug when the
+ *     `contenteditable` attribute is included anywhere else in the document.
+ *     Otherwise it causes space to appear at the top and bottom of elements
+ *     that receive the `clearfix` class.
+ *  2. The use of `table` rather than `block` is only necessary if using
+ *     `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: ' ';   /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
